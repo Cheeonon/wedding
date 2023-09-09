@@ -1,0 +1,95 @@
+.web{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    background-color: #DD3D14;
+    color: #fffbf4;
+    font-size: .78rem;
+}
+
+.block{
+    
+
+    &-page{
+        margin: 1rem;
+        width: 100%;
+
+        &--position{
+            position: relative;
+        }
+    }
+
+    &__belt{
+        margin: 2rem;
+
+    }
+
+    &__paragraph{
+        margin: 1rem;
+    }
+
+    &__img{
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    &__title{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    &__form{
+        display: flex;
+        flex-direction: column;
+        border-radius: 3px;
+        padding: 1.5rem;
+        margin: 1rem;
+        border: 1.7px dashed #fffbf4;
+    }
+
+
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__block{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    &__label{
+        margin-right: .5rem;
+    }
+
+    &__input{
+        background-color: transparent;
+        border-radius: .5px;
+        border: none;
+        border-bottom: 2px dashed #fffbf4;
+    }
+
+    &__submit{
+        color: #DD3D14;
+        background-color: #fffbf4;
+        border: none;
+        border-radius: 3px;
+        padding: 1rem;
+        margin-top: 1.3rem;
+
+    }
+}
+
+.horizontalLine{
+    display: block;
+    width: 2.5rem;
+    height: .1rem;
+    background-color: #fffbf4;
+}

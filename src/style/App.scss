@@ -1,0 +1,23 @@
+@use "./partials/fonts" as *;
+
+*, *::before, *::after{
+    box-sizing: border-box;
+    font-family: 'DXB';
+}
+
+html{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+p, h1, h2, h3{
+    margin: 0;
+    padding: 0;
+}
