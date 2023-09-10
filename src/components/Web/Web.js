@@ -35,8 +35,8 @@ const Web = () => {
                 </div>
                 <div className="block__paragraph">
                     <p className="block__line">저희 두 사람, 이제는 한 몸을 이루어</p>
-                    <p className="block__line">오직 여호와를 섬기며 함께 열매 맺겠노라 서약하려 합니다.</p>
-                    <p className="block__line">이 기쁜 순간을 함께하고 싶기에, 귀하를 초대합니다.</p>
+                    <p className="block__line">오직 여호와를 섬기며 함께 열매 맺겠노라<br></br> 서약하려 합니다.</p>
+                    <p className="block__line">이 기쁜 순간을 함께하고 싶기에,<br></br> 귀하를 초대합니다.</p>
                 </div>
             </div>
             <div className="horizontalLine"></div>
