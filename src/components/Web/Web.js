@@ -4,8 +4,10 @@ import dataJson from "../../data/users.json";
 import { useState } from 'react';
 
 const Web = () => {
-    const [user, setUser] = useState({name: "", phonenumber: "", rsvp: ""});
+    const [user, setUser] = useState({name: {name: "", event: "", guest: ""}});
     const [data, setData] = useState(dataJson);
+
+    console.log(data)
 
     let handleChange=(e)=>{
         setUser({...user, [e.target.name]: e.target.value })
@@ -13,11 +15,15 @@ const Web = () => {
 
     let handleSubmit=(e)=>{
         e.preventDefault();
-        setData(user)
-        alert("Submission ")
+
+        setData([...data, {"Name": user.name, "Event": user.event, "Guest": user.guest}]);
+
+        console.log(data)
+
+        alert("Thank you for RSVPing. Hope to see you soon.")
+        e.target.reset();
     }
     
-    console.log(data)
 
     return (
         <main className="web">
@@ -83,24 +89,22 @@ const Web = () => {
 
                             <div>
                                 <label>
-                                    <input type="radio" name="guest" value="Reception" required onChange={handleChange}/> I will be attending alone.
+                                    <input type="radio" name="guest" value="Alone" required onChange={handleChange}/> I will be attending alone.
                                 </label>
                             </div>
                             <div>
                                 <label>
-                                    <input type="radio" name="guest" value="Both" required onChange={handleChange}/> I will be bringing guests (adult).
+                                    <input type="radio" name="guest" value="Adult Guest" required onChange={handleChange}/> I will be bringing guests (adult).
                                 </label>
                             </div>
                             <div>
                                 <label>
-                                    <input type="radio" name="guest" value="Both" required onChange={handleChange}/> I will be bringing guests (children).
+                                    <input type="radio" name="guest" value="Children Guest" required onChange={handleChange}/> I will be bringing guests (children).
                                 </label>
                             </div>
                         </div>
-
                     </div>
-                   
-                    <input className="form__submit" type="submit" value="Submit"/>
+                    <input className="form__submit" type="submit" value="Submit" onSubmit={handleSubmit}/>
                 </form>
             </div>
         </main>

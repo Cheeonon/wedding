@@ -1,1 +1,8 @@
-{}
+
+[
+    {
+        "Name" : "Example Name",
+        "Event" : "Ceremony",
+        "Guest" : "Alone"
+    }
+]
