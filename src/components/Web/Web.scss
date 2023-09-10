@@ -1,3 +1,6 @@
+@use "../../style/partials/fonts" as *;
+
+
 .web{
     display: flex;
     flex-direction: column;
@@ -104,7 +107,7 @@
         color: #fdf4df;
         background-color: #DD3D14;
         border: none;
-        border-radius: 3px;
+        border-radius: .1rem;
         padding: .7rem;
         margin-top: 3rem;
         width: 10rem;
@@ -119,4 +122,13 @@
     width: 2.5rem;
     height: .1rem;
     background-color: #fffbf4;
+}
+
+.english{
+    font-family: 'Lateef';
+    font-size: 1.3rem;
+}
+
+.korean{
+    font-family: 'DXB';
 }
