@@ -14,6 +14,7 @@ const Web = () => {
     let handleSubmit=(e)=>{
         e.preventDefault();
         setData(user)
+        alert("Submission ")
     }
     
     console.log(data)
