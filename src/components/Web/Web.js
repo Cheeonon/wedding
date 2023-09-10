@@ -1,8 +1,14 @@
 import './Web.scss';
-import cover from "../../assets/img/main.PNG";
+import cover from "../../assets/img/cover.jpg";
 import heart from "../../assets/img/placeholder5050.svg";
 
 const Web = () => {
+    
+    let handleClick=(e)=>{
+        e.preventDefault();
+        console.log("I was clicked")
+    }
+
     return (
         <div className="web">
             <div className="block">
@@ -52,7 +58,7 @@ const Web = () => {
                         <input type="radio" name="fruit" value="orange" />Reception
                         <input type="radio" name="fruit" value="melon" />Both
                     </div>
-                    <input className="form__submit" type="submit" value="Submit"/>
+                    <input className="form__submit" type="submit" value="Submit" onClick={handleClick}/>
                 </form>
             </div>
         </div>
