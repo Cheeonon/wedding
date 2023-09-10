@@ -56,19 +56,33 @@ const Web = () => {
                         <label className="form__label" htmlFor='name'>NAME</label>
                         <input className="form__input" type="text" name="name" required onChange={handleChange}/>
                     </div>
-                    <div className="form__block">
+                    <div className="form__block form__block--column">
                         <label className="form__label" htmlFor='rsvp'>Event Attendance Preferences</label>
                         <small>Please indicate which events you plan to attend:</small>
-                        <input type="radio" name="rsvp" value="Ceremony" required onChange={handleChange}/>Ceremony
-                        <input type="radio" name="rsvp" value="Reception" onChange={handleChange}/>Reception
-                        <input type="radio" name="rsvp" value="Both" onChange={handleChange}/>Both Ceremony and Reception
+                        <div>
+                            <input type="radio" name="rsvp" value="Ceremony" required onChange={handleChange}/>Ceremony
+                        </div>
+                        <div>
+                            <input type="radio" name="rsvp" value="Reception" required onChange={handleChange}/>Reception
+                        </div>
+                        <div>
+                            <input type="radio" name="rsvp" value="Both" required onChange={handleChange}/>Both Ceremony and Reception
+                        </div>
                     </div>
-                    <div className="form__block">
-                        <label className="form__label" htmlFor='rsvp'>Guest Information:</label>
+                    <div className="form__block form__block--column">
+                        <label className="form__label" htmlFor='rsvp'>Guest Information</label>
                         <small>Please provide the following details for additional attendees:</small>
-                        <input className="form__input" type="radio" name="rsvp"  onChange={handleChange}/> I will be attending alone.
-                        <input className="form__input" type="radio" name="rsvp"  onChange={handleChange}/> I will be bringing a guest.
-                        <small>If you select the second option, please indicate the number of additional guests (including children, if applicable): ______</small>
+
+                        <div>
+                            <input type="radio" name="rsvp" value="Reception" required onChange={handleChange}/> I will be attending alone.
+                        </div>
+                        <div>
+                            <input type="radio" name="rsvp" value="Both" required onChange={handleChange}/> I will be bringing a guest.
+                        </div>
+                        <div>
+                            If you select the second option, please indicate the number of additional guests (including children, if applicable):
+                            <input type="text" name="rsvp" value=""/>
+                        </div>
                     </div>
                     <input className="form__submit" type="submit" value="Submit"/>
                 </form>

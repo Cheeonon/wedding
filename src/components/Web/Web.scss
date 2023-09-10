@@ -88,6 +88,11 @@
     &__block{
         margin-top: 1rem;
         position: relative;
+
+        &--column{
+            display: flex;
+            flex-direction: column;
+        }
     }
 
     &__label{
