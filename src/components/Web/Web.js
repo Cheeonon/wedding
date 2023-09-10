@@ -62,13 +62,13 @@ const Web = () => {
                         <div className="form__block">
                             <label className="form__label--title" htmlFor='event'>Event Attendance Preferences</label>
                             <div>
-                                <input type="radio" name="event" value="Ceremony" required onChange={handleChange}/>Ceremony
+                                <input type="radio" name="event" value="Ceremony" required onChange={handleChange}/> Ceremony
                             </div>
                             <div>
-                                <input type="radio" name="event" value="Reception" required onChange={handleChange}/>Reception
+                                <input type="radio" name="event" value="Reception" required onChange={handleChange}/> Reception
                             </div>
                             <div>
-                                <input type="radio" name="event" value="Both" required onChange={handleChange}/>Both Ceremony and Reception
+                                <input type="radio" name="event" value="Both" required onChange={handleChange}/> Both Ceremony and Reception
                             </div>
                         </div>
                         <div className="form__block">
