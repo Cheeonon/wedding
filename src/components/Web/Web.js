@@ -25,8 +25,8 @@ const Web = () => {
             </div>
             <div className="block">
                 <div className="block__paragraph">
-                    <p className="korean">한성희 정미옥의 장남 <b>한규희</b></p>
-                    <p className="korean">박성우 김성희의 장녀 <b>박채린</b></p>
+                    <p className="korean">한성희 정미옥의 장남 <b className="fontSize">한규희</b></p>
+                    <p className="korean">박성우 김성희의 장녀 <b className="fontSize">박채린</b></p>
                 </div>
                 <div className="block__paragraph">
                     <p className="korean">저희 두 사람, 이제는 한 몸을 이루어</p>
@@ -36,53 +36,57 @@ const Web = () => {
             </div>
             <div className="horizontalLine"></div>
             <div className="block">
-                <div className="block__paragraph block">
+                <div className="block__paragraph">
                     <p>ceremony | 11 : 00 AM</p>
-                    <p>"LAWRENCE PARK COMMUNITY CHURCH"</p>
+                    <p>"LAWRENCE PARK <br></br> COMMUNITY CHURCH"</p>
                     <p>2180 BAYVIEW AVE, NORTH YORK</p>
                 </div>
-                <div className="block__paragraph block">
+                <div className="block__paragraph">
                     <p>reception | 12 : 30 PM</p>
                     <p>"AUBERGE DU POMMIER"</p>
                     <p>4150 YONGE ST, NORTH YORK</p>
                 </div>
             </div>
             <div className="block">
-                <form className="block__form" onSubmit={handleSubmit}>
-                    <h1 className="block__title">RSVP</h1> <span className='block__title--small'>by <b>20TH OF OCTOBER</b></span>
+                <form className="form" onSubmit={handleSubmit}>
+                    <div className="form__title">
+                        <h1 className="form__title--large">RSVP</h1>
+                        <span className='form__title--small'>by <b className='form__title--small'>20TH OF OCTOBER</b></span>
+                    </div>
 
-                    <div className="form__block">
-                        <label className="form__label" htmlFor='name'>NAME</label>
-                        <input className="form__input" type="text" name="name" required onChange={handleChange}/>
-                    </div>
-                    <div className="form__block form__block--column">
-                        <label className="form__label" htmlFor='rsvp'>Event Attendance Preferences</label>
-                        <small>Please indicate which events you plan to attend:</small>
-                        <div>
-                            <input type="radio" name="rsvp" value="Ceremony" required onChange={handleChange}/>Ceremony
+                    <div className="form__body">
+                        <div className="form__block form__block--row">
+                            <label className="form__label--title" htmlFor='name' autofocus>NAME</label>
+                            <input className="form__input" type="text" name="name" required onChange={handleChange}/>
                         </div>
-                        <div>
-                            <input type="radio" name="rsvp" value="Reception" required onChange={handleChange}/>Reception
+                        <div className="form__block">
+                            <label className="form__label--title" htmlFor='event'>Event Attendance Preferences</label>
+                            <div>
+                                <input type="radio" name="event" value="Ceremony" required onChange={handleChange}/>Ceremony
+                            </div>
+                            <div>
+                                <input type="radio" name="event" value="Reception" required onChange={handleChange}/>Reception
+                            </div>
+                            <div>
+                                <input type="radio" name="event" value="Both" required onChange={handleChange}/>Both Ceremony and Reception
+                            </div>
                         </div>
-                        <div>
-                            <input type="radio" name="rsvp" value="Both" required onChange={handleChange}/>Both Ceremony and Reception
-                        </div>
-                    </div>
-                    <div className="form__block form__block--column">
-                        <label className="form__label" htmlFor='rsvp'>Guest Information</label>
-                        <small>Please provide the following details for additional attendees:</small>
+                        <div className="form__block">
+                            <label className="form__label--title" htmlFor='guest'>Guest Information</label>
 
-                        <div>
-                            <input type="radio" name="rsvp" value="Reception" required onChange={handleChange}/> I will be attending alone.
+                            <div>
+                                <input type="radio" name="guest" value="Reception" required onChange={handleChange}/> I will be attending alone.
+                            </div>
+                            <div>
+                                <input type="radio" name="guest" value="Both" required onChange={handleChange}/> I will be bringing a guest (adult).
+                            </div>
+                            <div>
+                                <input type="radio" name="guest" value="Both" required onChange={handleChange}/> I will be bringing a guest (children).
+                            </div>
                         </div>
-                        <div>
-                            <input type="radio" name="rsvp" value="Both" required onChange={handleChange}/> I will be bringing a guest.
-                        </div>
-                        <div>
-                            If you select the second option, please indicate the number of additional guests (including children, if applicable):
-                            <input type="text" name="rsvp" value=""/>
-                        </div>
+
                     </div>
+                   
                     <input className="form__submit" type="submit" value="Submit"/>
                 </form>
             </div>

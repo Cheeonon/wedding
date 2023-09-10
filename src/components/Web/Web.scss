@@ -7,13 +7,19 @@
     justify-self: center;
     align-items: center;
     text-align: center;
-    overflow: hidden;
     background-color: #e84821;
     color: #fffbf4;
+
+    @media screen and (min-width: 320px) {
+        overflow: hidden;
+        width: 100vw;
+    }
+
 }
 
 .block{
     margin: 1rem;
+    width: 320px;
 
     @media screen and (min-width: 320px) {
         width: 100vw;
@@ -31,30 +37,6 @@
         display: block;
         width: 100%;
     }
-
-    &__title{
-        margin-top: 1rem;
-        font-size: 3rem;
-
-        &--small{
-            font-size: 1rem;
-        }
-    }
-
-    &__form{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        border-radius: 3px;
-        padding: 1.5rem;
-        margin: 1rem;
-        background-color: #fdf4df;
-        color: #DD3D14;
-
-    }
-
-
 }
 
 .form{
@@ -62,38 +44,67 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-radius: 3px;
+    padding: 1.5rem;
+    margin: 1rem;
+    background-color: #fdf4df;
     color: #DD3D14;
     
-    &__block{
-        margin-top: 1rem;
-        position: relative;
+    &__title{
 
-        &--column{
-            display: flex;
-            flex-direction: column;
+        &--large{
+            font-size: 3rem;
+            margin-bottom: -1rem;
+        }
+
+        &--small{
+            font-size: .8rem;
+        }
+    }
+
+    &__body{
+        margin-top: 2rem;
+    }
+
+    &__block{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+
+        &--row{
+            flex-direction: row;
         }
     }
 
     &__label{
-        margin-right: .5rem;
-        font-size: .8rem;
+
+        &--title{
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-right: .7rem;
+        }
     }
 
     &__input{
         background-color: transparent;
-        border-radius: .5px;
-        border: none;
+        border-radius: 3px;
         border: 1px solid #DD3D14;
-        font-size: .8rem;
+        width: 50%;
+        padding: .3rem;
+        font-size: 1rem;
+        color: rgb(61, 61, 61);
     }
 
     &__submit{
         color: #fdf4df;
         background-color: #DD3D14;
         border: none;
-        border-radius: .1rem;
+        border-radius: 3px;
         padding: .7rem;
-        margin-top: 3rem;
+        margin: 1rem;
         width: 10rem;
         font-size: 1.4rem;
         text-transform: uppercase;
@@ -108,11 +119,11 @@
     background-color: #fffbf4;
 }
 
-.english{
-    font-family: 'Lateef';
-    font-size: 1.3rem;
-}
-
 .korean{
     font-family: 'DXB';
+    font-size: .8rem;
+}
+
+.fontSize{
+    font-size: .8rem;
 }
