@@ -78,10 +78,10 @@ const Web = () => {
                                 <input type="radio" name="guest" value="Reception" required onChange={handleChange}/> I will be attending alone.
                             </div>
                             <div>
-                                <input type="radio" name="guest" value="Both" required onChange={handleChange}/> I will be bringing a guest (adult).
+                                <input type="radio" name="guest" value="Both" required onChange={handleChange}/> I will be bringing guests (adult).
                             </div>
                             <div>
-                                <input type="radio" name="guest" value="Both" required onChange={handleChange}/> I will be bringing a guest (children).
+                                <input type="radio" name="guest" value="Both" required onChange={handleChange}/> I will be bringing guests (children).
                             </div>
                         </div>
 
