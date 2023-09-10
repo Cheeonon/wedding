@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Lateef';
+    src: url('Lateef.woff2') format('woff2'),
+        url('Lateef.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

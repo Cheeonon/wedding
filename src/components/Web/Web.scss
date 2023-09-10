@@ -52,8 +52,7 @@
 
     &__title{
         margin-top: 1rem;
-        margin-bottom: 1rem;
-        font-size: 2rem;
+        font-size: 3rem;
 
         &--small{
             font-size: 1rem;
@@ -68,7 +67,7 @@
         border-radius: 3px;
         padding: 1.5rem;
         margin: 1rem;
-        background: #fffbf4;
+        background-color: #fdf4df;
         color: #DD3D14;
 
     }
@@ -85,7 +84,6 @@
     
     &__block{
         margin-top: 1rem;
-        margin-bottom: 1rem;
         position: relative;
     }
 
@@ -95,21 +93,24 @@
     }
 
     &__input{
-        background-color: #DD3D14;
+        background-color: transparent;
         border-radius: .5px;
         border: none;
-        border: 2px solid #DD3D14;
+        border: 1px solid #DD3D14;
         font-size: .8rem;
     }
 
     &__submit{
-        color: #DD3D14;
-        background-color: #fffbf4;
+        color: #fdf4df;
+        background-color: #DD3D14;
         border: none;
         border-radius: 3px;
-        padding: .8rem;
-        margin-top: 1.3rem;
+        padding: .7rem;
+        margin-top: 3rem;
         width: 10rem;
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        transform: scale(.8);
     }
 }
 
