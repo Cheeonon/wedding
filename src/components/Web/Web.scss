@@ -7,7 +7,7 @@
     overflow: hidden;
     background-color: #e84821;
     color: #fffbf4;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .block{
@@ -53,6 +53,11 @@
     &__title{
         margin-top: 1rem;
         margin-bottom: 1rem;
+        font-size: 2rem;
+
+        &--small{
+            font-size: 1rem;
+        }
     }
 
     &__form{
@@ -63,7 +68,9 @@
         border-radius: 3px;
         padding: 1.5rem;
         margin: 1rem;
-        border: 1.7px dashed #fffbf4;
+        background: #fffbf4;
+        color: #DD3D14;
+
     }
 
 
@@ -74,7 +81,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    color: #DD3D14;
+    
     &__block{
         margin-top: 1rem;
         margin-bottom: 1rem;
@@ -87,10 +95,10 @@
     }
 
     &__input{
-        background-color: transparent;
+        background-color: #DD3D14;
         border-radius: .5px;
         border: none;
-        border-bottom: 2px dashed #fffbf4;
+        border: 2px solid #DD3D14;
         font-size: .8rem;
     }
 

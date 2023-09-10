@@ -54,7 +54,7 @@ const Web = () => {
             </div>
             <div className="block block-page">
                 <form className="block__form" onSubmit={handleSubmit}>
-                    <h2 className="block__title">RSVP BY 20TH OF OCTOBER</h2>
+                    <h2 className="block__title">RSVP<br></br> <span className='block__title--small'>BY 20TH OF OCTOBER</span></h2>
                     <div className="form__block">
                         <label className="form__label" htmlFor='name'>Name</label>
                         <input className="form__input" type="text" name="name" required onChange={handleChange}/>
