@@ -1,22 +1,34 @@
 import './Web.scss';
 import cover from "../../assets/img/cover.jpg";
-import heart from "../../assets/img/placeholder5050.svg";
+import main from "../../assets/img/main.jpg";
+import dataJson from "../../data/users.json";
+import { useState } from 'react';
 
 const Web = () => {
-    
-    let handleClick=(e)=>{
-        e.preventDefault();
-        console.log("I was clicked")
+    const [user, setUser] = useState({name: "", phonenumber: "", rsvp: ""});
+    const [data, setData] = useState(dataJson);
+
+    let handleChange=(e)=>{
+        setUser({...user, [e.target.name]: e.target.value })
     }
+
+    let handleSubmit=(e)=>{
+        e.preventDefault();
+        setData(user)
+    }
+    
+    console.log(data)
 
     return (
         <div className="web">
             <div className="block">
-                <img classname="block__img" src={cover} alt="대문" />
+                <img className="block__img" src={cover} alt="대문" />
             </div>
+            <div className="block">
+                <img className="block__img" src={main} alt="메인" />
+            </div>
+            <br></br>
             <div className="block block-page">
-                <div className="block__belt">오직 나와 내 집은 여호와를 섬기겠노라 여호수아 24:15</div>
-                <img src={heart} alt="" />
                 <div className="block__paragraph">
                     <p className="block__line">한성희 정미옥의 장남 <b>한규희</b></p>
                     <p className="block__line">박성우 김성희의 장녀 <b>박채린</b></p>
@@ -41,24 +53,24 @@ const Web = () => {
                 </div>
             </div>
             <div className="block block-page">
-            {/* onSubmit={handleSubmit(data => saveData(data))} */}
-                <form className="block__form">
+                <form className="block__form" onSubmit={handleSubmit}>
                     <h2 className="block__title">RSVP BY 20TH OF OCTOBER</h2>
                     <div className="form__block">
-                        <label className="form__label">Name</label>
-                        <input className="form__input" name="name"/>
+                        <label className="form__label" htmlFor='name'>Name</label>
+                        <input className="form__input" type="text" name="name" required onChange={handleChange}/>
                     </div>
                     <div className="form__block">
-                        <label className="form__label">Phone Number</label>
-                        <input className="form__input" name="phonenumber"/>
+                        <label className="form__label" htmlFor='rsvp'>참석 여부</label>
+                        <input type="radio" name="rsvp" value="Ceremony" required onChange={handleChange}/>Ceremony
+                        <input type="radio" name="rsvp" value="Reception" onChange={handleChange}/>Reception
+                        <input type="radio" name="rsvp" value="Both" onChange={handleChange}/>Both
                     </div>
                     <div className="form__block">
-                        <label className="form__label">참석여부</label>
-                        <input type="radio" name="fruit" value="apple" />Ceremony
-                        <input type="radio" name="fruit" value="orange" />Reception
-                        <input type="radio" name="fruit" value="melon" />Both
+                        <label className="form__label" htmlFor='rsvp'>동행인()</label>
+                        <input type="radio" name="rsvp" value="Ceremony" required onChange={handleChange}/>O
+                        <input type="radio" name="rsvp" value="Reception" onChange={handleChange}/>X
                     </div>
-                    <input className="form__submit" type="submit" value="Submit" onClick={handleClick}/>
+                    <input className="form__submit" type="submit" value="Submit"/>
                 </form>
             </div>
         </div>

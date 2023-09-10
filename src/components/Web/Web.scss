@@ -5,17 +5,31 @@
     align-items: center;
     text-align: center;
     overflow: hidden;
-    background-color: #DD3D14;
+    background-color: #e84821;
     color: #fffbf4;
     font-size: .78rem;
 }
 
 .block{
+
+    @media screen and (min-width: 320px) {
+        width: 100vw;
+    }
     
+    @media screen and (min-width: 600px) {
+        width: 500px;
+    }
 
     &-page{
         margin: 1rem;
-        width: 100%;
+
+        @media screen and (min-width: 320px) {
+            width: 100vw;
+        }
+        
+        @media screen and (min-width: 600px) {
+            width: 500px;
+        }
 
         &--position{
             position: relative;
@@ -34,7 +48,6 @@
     &__img{
         display: block;
         width: 100%;
-        height: 100%;
     }
 
     &__title{
@@ -45,6 +58,8 @@
     &__form{
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         border-radius: 3px;
         padding: 1.5rem;
         margin: 1rem;
@@ -63,10 +78,12 @@
     &__block{
         margin-top: 1rem;
         margin-bottom: 1rem;
+        position: relative;
     }
 
     &__label{
         margin-right: .5rem;
+        font-size: .8rem;
     }
 
     &__input{
@@ -74,6 +91,7 @@
         border-radius: .5px;
         border: none;
         border-bottom: 2px dashed #fffbf4;
+        font-size: .8rem;
     }
 
     &__submit{
@@ -81,9 +99,9 @@
         background-color: #fffbf4;
         border: none;
         border-radius: 3px;
-        padding: 1rem;
+        padding: .8rem;
         margin-top: 1.3rem;
-
+        width: 10rem;
     }
 }
 
