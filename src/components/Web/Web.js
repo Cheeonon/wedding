@@ -60,28 +60,40 @@ const Web = () => {
                             <input className="form__input" type="text" name="name" required onChange={handleChange}/>
                         </div>
                         <div className="form__block">
-                            <label className="form__label--title" htmlFor='event'>Event Attendance Preferences</label>
+                            <h2 className="form__label--title" htmlFor='event'>Event Attendance Preferences</h2>
                             <div>
-                                <input type="radio" name="event" value="Ceremony" required onChange={handleChange}/> Ceremony
+                                <label>
+                                    <input type="radio" name="event" value="Ceremony" required onChange={handleChange}/> Ceremony
+                                </label>
                             </div>
                             <div>
-                                <input type="radio" name="event" value="Reception" required onChange={handleChange}/> Reception
+                                <label>
+                                    <input type="radio" name="event" value="Reception" required onChange={handleChange}/> Reception
+                                </label>
                             </div>
                             <div>
-                                <input type="radio" name="event" value="Both" required onChange={handleChange}/> Both Ceremony and Reception
+                                <label>
+                                    <input type="radio" name="event" value="Both" required onChange={handleChange}/> Both Ceremony and Reception
+                                </label>
                             </div>
                         </div>
                         <div className="form__block">
-                            <label className="form__label--title" htmlFor='guest'>Guest Information</label>
+                            <h2 className="form__label--title" htmlFor='guest'>Guest Information</h2>
 
                             <div>
-                                <input type="radio" name="guest" value="Reception" required onChange={handleChange}/> I will be attending alone.
+                                <label>
+                                    <input type="radio" name="guest" value="Reception" required onChange={handleChange}/> I will be attending alone.
+                                </label>
                             </div>
                             <div>
-                                <input type="radio" name="guest" value="Both" required onChange={handleChange}/> I will be bringing guests (adult).
+                                <label>
+                                    <input type="radio" name="guest" value="Both" required onChange={handleChange}/> I will be bringing guests (adult).
+                                </label>
                             </div>
                             <div>
-                                <input type="radio" name="guest" value="Both" required onChange={handleChange}/> I will be bringing guests (children).
+                                <label>
+                                    <input type="radio" name="guest" value="Both" required onChange={handleChange}/> I will be bringing guests (children).
+                                </label>
                             </div>
                         </div>
 
