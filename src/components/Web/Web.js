@@ -4,7 +4,6 @@ import { submitRsvp } from '../../utils/axios';
 import { useEffect, useState  } from 'react';
 
 const Web = () => {
-    const [user, setUser] = useState("");
     const [newUser, setNewUser] = useState("");
     const [name, setName] = useState("");
     const [guest, setGuest] = useState("");
@@ -19,7 +18,6 @@ const Web = () => {
         submitRsvp(newUser)
         .then(resolve => {
             console.log(resolve.data)
-            setUser(null)
         })
         .catch(error => {
             console.log(error)
