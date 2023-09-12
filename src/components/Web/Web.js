@@ -1,25 +1,43 @@
 import './Web.scss';
 import cover from "../../assets/img/cover.jpg";
-import dataJson from "../../data/users.json";
-import { useState } from 'react';
+import { submitRsvp } from '../../utils/axios';
+import { useEffect, useState  } from 'react';
 
 const Web = () => {
-    const [user, setUser] = useState({name: {name: "", event: "", guest: ""}});
-    const [data, setData] = useState(dataJson);
+    const [user, setUser] = useState("");
+    const [newUser, setNewUser] = useState("");
+    const [name, setName] = useState("");
+    const [guest, setGuest] = useState("");
 
-    console.log(data)
+    
+    useEffect(() => {
+        console.log(newUser)
+        if(!newUser){
+            return
+        }
 
-    let handleChange=(e)=>{
-        setUser({...user, [e.target.name]: e.target.value })
+        submitRsvp(newUser)
+        .then(resolve => {
+            console.log(resolve.data)
+            setUser(null)
+        })
+        .catch(error => {
+            console.log(error)
+        })
+    }, [newUser])
+
+
+    let handleName=(e)=>{
+        setName(e.target.value)
+    }
+
+    let handleGuest=(e)=>{
+        setGuest(e.target.value)
     }
 
     let handleSubmit=(e)=>{
         e.preventDefault();
-
-        setData([...data, {"Name": user.name, "Event": user.event, "Guest": user.guest}]);
-
-        console.log(data)
-
+        setNewUser({name, guest});
         alert("Thank you for RSVPing. Hope to see you soon.")
         e.target.reset();
     }
@@ -44,64 +62,33 @@ const Web = () => {
             <div className="horizontalLine"></div>
             <div className="block">
                 <div className="block__paragraph">
-                    <p>ceremony | 11 : 00 AM</p>
-                    <p>"LAWRENCE PARK <br></br> COMMUNITY CHURCH"</p>
-                    <p>2180 BAYVIEW AVE, NORTH YORK</p>
+                    <p>CEREMONY | 11 : 00 AM</p>
+                    <p>"Lawrence Park <br></br> Community Church"</p>
+                    <p>2180 Bayview Ave, North York</p>
                 </div>
                 <div className="block__paragraph">
-                    <p>reception | 12 : 30 PM</p>
-                    <p>"AUBERGE DU POMMIER"</p>
-                    <p>4150 YONGE ST, NORTH YORK</p>
+                    <p>RECEPTION | 12 : 30 PM</p>
+                    <p>"Auberge Du Pommier"</p>
+                    <p>4150 Yonge St, North York</p>
                 </div>
             </div>
             <div className="block">
                 <form className="form" onSubmit={handleSubmit}>
                     <div className="form__title">
                         <h1 className="form__title--large">RSVP</h1>
-                        <span className='form__title--small'>by <b className='form__title--small'>20TH OF OCTOBER</b></span>
+                        <span className='form__title--small'><b className='form__title--small'>Please response by Oct 20th</b></span>
                     </div>
 
                     <div className="form__body">
-                        <div className="form__block form__block--row">
-                            <label className="form__label--title" htmlFor='name' autofocus>NAME</label>
-                            <input className="form__input" type="text" name="name" required onChange={handleChange}/>
+                        <div className="form__block">
+                            <label className="form__label--title" htmlFor='name'>NAME:
+                                <input className="form__input" type="text" id="name" name="name" placeholder="John Doe" required onChange={handleName}/>
+                            </label>
                         </div>
                         <div className="form__block">
-                            <h2 className="form__label--title" htmlFor='event'>Event Attendance Preferences</h2>
-                            <div>
-                                <label>
-                                    <input type="radio" name="event" value="Ceremony" required onChange={handleChange}/> Ceremony
-                                </label>
-                            </div>
-                            <div>
-                                <label>
-                                    <input type="radio" name="event" value="Reception" required onChange={handleChange}/> Reception
-                                </label>
-                            </div>
-                            <div>
-                                <label>
-                                    <input type="radio" name="event" value="Both" required onChange={handleChange}/> Both Ceremony and Reception
-                                </label>
-                            </div>
-                        </div>
-                        <div className="form__block">
-                            <h2 className="form__label--title" htmlFor='guest'>Guest Information</h2>
-
-                            <div>
-                                <label>
-                                    <input type="radio" name="guest" value="Alone" required onChange={handleChange}/> I will be attending alone.
-                                </label>
-                            </div>
-                            <div>
-                                <label>
-                                    <input type="radio" name="guest" value="Adult Guest" required onChange={handleChange}/> I will be bringing guests (adult).
-                                </label>
-                            </div>
-                            <div>
-                                <label>
-                                    <input type="radio" name="guest" value="Children Guest" required onChange={handleChange}/> I will be bringing guests (children).
-                                </label>
-                            </div>
+                            <label className="form__label--title" htmlFor='guest'> Number of guests attending:
+                                <input className="form__input form__input--number" type="number" id="guest" name="guest" placeholder="0" required onChange={handleGuest}/>
+                            </label>
                         </div>
                     </div>
                     <input className="form__submit" type="submit" value="Submit" onSubmit={handleSubmit}/>
