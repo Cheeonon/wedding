@@ -134,3 +134,12 @@
 .fontSize{
     font-size: .8rem;
 }
+
+.linkFont{
+    font-size: .8rem;
+    color: #fffbf4;
+    text-decoration: none;
+    &:hover{
+        cursor:auto;
+    }
+}
