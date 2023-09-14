@@ -11,6 +11,8 @@ function App() {
       <Routes>
           <Route path="/" exact element={<Web />}></Route> 
           <Route path="/list" element={<List />}></Route> 
+          <Route path="/test" exact element={<List />}></Route> 
+          <Route path="/testtest" exact element={<Web />}></Route> 
       </Routes>
     </BrowserRouter>
   
