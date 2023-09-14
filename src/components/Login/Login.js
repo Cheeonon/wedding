@@ -13,7 +13,7 @@ const Login = () => {
     }
 
     if(login === "9090"){
-        return <Link to="/list" className="clickHere">Click here</Link>
+        return <Link to="/list" className="clickHere">동행자 리스트</Link>
 
     }
 
