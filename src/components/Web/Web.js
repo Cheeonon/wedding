@@ -2,6 +2,7 @@ import './Web.scss';
 import cover from "../../assets/img/cover.jpg";
 import { submitRsvp } from '../../utils/axios';
 import { useEffect, useState  } from 'react';
+import { Link } from 'react-router-dom';
 
 const Web = () => {
     const [newUser, setNewUser] = useState("");
@@ -48,8 +49,8 @@ const Web = () => {
             </div>
             <div className="block">
                 <div className="block__paragraph">
-                    <p className="korean">한성희 정미옥의 장남 <b className="fontSize">한규희</b></p>
-                    <p className="korean">박성우 김성희의 장녀 <b className="fontSize">박채린</b></p>
+                    <p className="korean">한성희 정미옥의 장남 <b className="fontSize">한규희</b></p> 
+                    <p className="korean">박성우 김성희의 장녀 <b className="fontSize"><Link to="/list">박채린</Link></b></p>
                 </div>
                 <div className="block__paragraph">
                     <p className="korean">저희 두 사람, 이제는 한 몸을 이루어</p>

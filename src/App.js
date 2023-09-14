@@ -1,7 +1,7 @@
 import Web from "./components/Web/Web";
 import List from "./components/List/List";
 import "./style/App.scss"
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter , Route, Routes } from "react-router-dom";
 
 
 
@@ -11,8 +11,6 @@ function App() {
       <Routes>
           <Route path="/" exact element={<Web />}></Route> 
           <Route path="/list" element={<List />}></Route> 
-          <Route path="/test" exact element={<List />}></Route> 
-          <Route path="/testtest" exact element={<Web />}></Route> 
       </Routes>
     </BrowserRouter>
   
