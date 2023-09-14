@@ -1,7 +1,7 @@
 import axios from 'axios';
 
-// const baseURL = `https://chat-app-api-production-65ff.up.railway.app`;
-const baseURL = `http://localhost:8081`;
+const baseURL = `https://wedding-api-new.up.railway.app`;
+// const baseURL = `http://localhost:8081`;
 
 
 export const getData = () => {
