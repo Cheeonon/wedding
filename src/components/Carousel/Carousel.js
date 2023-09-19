@@ -36,7 +36,7 @@ const Carousel = () => {
       <img
         className="carousel-image"
         src={images[currentIndex]}
-        alt={`Image ${currentIndex + 1}`}
+        alt={`${currentIndex + 1}`}
       />
       
       
@@ -49,7 +49,7 @@ const Carousel = () => {
             key={index}
             className={`thumbnail ${index === currentIndex ? 'active' : ''}`}
             src={image}
-            alt={`Thumbnail ${index + 1}`}
+            alt={`${index + 1}`}
             onClick={() => handleThumbnailClick(index)}
           />
         ))}
