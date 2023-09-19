@@ -7,8 +7,8 @@
     justify-self: center;
     align-items: center;
     text-align: center;
-    background-color: #e84821;
-    color: #fffbf4;
+    background-color: #fdecec;
+    color: #886c35;
 
     @media screen and (min-width: 320px) {
         overflow: hidden;
@@ -37,6 +37,11 @@
         display: block;
         width: 100%;
     }
+
+    &__carousel{
+        display: flex;
+        margin: 0;
+    }
 }
 
 .form{
@@ -47,18 +52,21 @@
     border-radius: 3px;
     padding: 1.5rem;
     margin: 1rem;
-    background-color: #fdf4df;
-    color: #DD3D14;
+    color: #fdecec;
+    border: solid white 1px;
     
     &__title{
+        color: #886c35;
+        
 
         &--large{
-            font-size: 3rem;
+            font-size: 2rem;
             margin-bottom: -1rem;
         }
 
         &--small{
-            font-size: 1rem;
+            font-family: Montserrat;
+            font-size: .7rem;
         }
     }
 
@@ -85,14 +93,17 @@
         &--title{
             font-weight: bold;
             text-transform: uppercase;
+            font-size: .7rem;
+
+        color: #886c35;
+
         }
     }
 
     &__input{
         background-color: transparent;
         border-radius: 3px;
-        border: none;
-        border-bottom: 1px solid #DD3D14;
+        border: 1px solid #886c35;
         width: 50%;
         color: rgb(61, 61, 61);
         margin-left: .5rem;
@@ -104,9 +115,9 @@
     }
 
     &__submit{
-        color: #fdf4df;
-        background-color: #DD3D14;
-        border: none;
+        color: #886c35;
+        background-color: #fdecec;
+        border: 1px solid white;
         padding: .7rem;
         margin: 1rem;
         width: 50%;
@@ -114,16 +125,16 @@
         text-transform: uppercase;
 
         &:hover{
-            background-color: #9e2d10;
+            background-color: #cba28e;
         }
     }
 }
 
-.horizontalLine{
-    display: block;
-    width: 2.5rem;
-    height: .1rem;
-    background-color: #fffbf4;
+.divider{
+    width: 6rem;
+    background-image: url("../../assets/img/divider.png") no-repeat;
+    background: center fixed;
+    margin: -1rem;
 }
 
 .korean{
@@ -137,9 +148,31 @@
 
 .linkFont{
     font-size: .8rem;
-    color: #fffbf4;
+    color: #886c35;
     text-decoration: none;
     &:hover{
         cursor:auto;
     }
+}
+
+.font--dx{
+    font-family: DX;
+    font-size: .8rem;
+    margin: 2rem;
+    margin-top: 3rem;
+}
+
+.font--mon{
+    font-family: Montserrat;
+    font-size: .8rem;
+    font-weight: 500;
+
+    &-bold{
+        font-weight: bold;
+    }
+}
+
+
+.line{
+    margin: .3rem;
 }

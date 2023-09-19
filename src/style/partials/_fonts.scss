@@ -17,3 +17,63 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'DX';
+    src: url('../../assets/font/DXPnM-KSCpc-EUC-H.woff2') format('woff2'),
+        url('../../assets/font/DXPnM-KSCpc-EUC-H.woff') format('woff'),
+        url('../../assets/font/DXPnM-KSCpc-EUC-H.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../../assets/font/Montserrat-Bold.woff2') format('woff2'),
+        url('../../assets/font/Montserrat-Bold.woff') format('woff'),
+        url('../../assets/font/Montserrat-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../../assets/font/Montserrat-Regular.woff2') format('woff2'),
+        url('../../assets/font/Montserrat-Regular.woff') format('woff'),
+        url('../../assets/font/Montserrat-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../../assets/font/Montserrat-SemiBold.woff2') format('woff2'),
+        url('../../assets/font/Montserrat-SemiBold.woff') format('woff'),
+        url('../../assets/font/Montserrat-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../../assets/font/Montserrat-ExtraBold.woff2') format('woff2'),
+        url('../../assets/font/Montserrat-ExtraBold.woff') format('woff'),
+        url('../../assets/font/Montserrat-ExtraBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../../assets/font/Montserrat-Medium.woff2') format('woff2'),
+        url('../../assets/font/Montserrat-Medium.woff') format('woff'),
+        url('../../assets/font/Montserrat-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
