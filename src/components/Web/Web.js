@@ -66,6 +66,7 @@ const Web = () => {
             <img src={divider} alt="divider" className="divider"></img>
             <div className="block">
                 <div className="block__paragraph">
+                    <p className="korean korean--date">2023년 11월 11일 토요일</p>
                     <p className='line font--mon korean line__title font--mon-bold'>CEREMONY 세레모니 | 11 : 00 AM</p>
                     <p className='line font--mon line__map'>ST. GEORGE ON YONGE ANGLICAN CHURCH</p>
                     <p className='line font--mon line__map'>5350 Yonge St. North York, Canada</p>

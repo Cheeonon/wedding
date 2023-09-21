@@ -149,6 +149,12 @@
 .korean{
     font-family: 'DXB';
     font-size: .8rem;
+
+    &--date{
+        font-family: Montserrat;
+        font-weight: 600;
+        font-size: .85rem;
+    }
 }
 
 .fontSize{
