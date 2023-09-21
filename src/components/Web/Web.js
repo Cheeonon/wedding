@@ -70,13 +70,13 @@ const Web = () => {
                     <p className='line font--mon korean line__title font--mon-bold'>CEREMONY 세레모니 | 11 : 00 AM</p>
                     <p className='line font--mon line__map'>ST. GEORGE ON YONGE ANGLICAN CHURCH</p>
                     <p className='line font--mon line__map'>5350 Yonge St. North York, Canada</p>
-                    <a href="google.com" className="map font--mon">GOOGLE MAP</a>
+                    <a href="https://www.google.com/maps/place/5350+Yonge+St,+North+York,+ON+M2N+5R5/@43.7740967,-79.4170817,17z/data=!3m1!4b1!4m6!3m5!1s0x882b2d72a2a70565:0xe083fff7bf433dab!8m2!3d43.7740929!4d-79.4145068!16s%2Fg%2F11c48g9318?entry=ttu" className="map font--mon">GOOGLE MAP</a>
                 </div>
                 <div className="block__paragraph">
                     <p className="line korean font--mon line__title font--mon-bold">RECEPTION 리셉션 | 12 : 30 PM</p>
                     <p className='line font--mon line__map'>AUBERGE DU POMMIER</p>
                     <p className='line font--mon line__map'>4150 Yonge St, North York</p>
-                    <a href="google.com" className="map font--mon">GOOGLE MAP</a>
+                    <a href="https://www.google.com/maps/place/4150+Yonge+St,+Toronto,+ON+M2P+2C6/@43.7469078,-79.4103569,17z/data=!3m1!4b1!4m6!3m5!1s0x882b3299e52a6d9f:0x1e0b65fd1c4ba8a9!8m2!3d43.746904!4d-79.407782!16s%2Fg%2F11c2grrf3n?entry=ttu" className="map font--mon">GOOGLE MAP</a>
                     <p className="korean line__parking">"각 건물 내 지하 주차장을 이용하실 수 있습니다."</p>
                 </div>
             </div>
