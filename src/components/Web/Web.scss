@@ -52,8 +52,10 @@
     border-radius: 3px;
     padding: 1.5rem;
     margin: 1rem;
+    margin-top: 3rem;
     color: #fdecec;
-
+    border: 1px solid #886c35;
+    
     &__radio{
         position: absolute;
         right: -1rem;
@@ -210,4 +212,9 @@
     &:hover{
         background-color: #675227;
     }
+}
+
+.joshua{
+    font-family: DX;
+    font-size: .6rem;
 }

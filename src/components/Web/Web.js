@@ -51,7 +51,7 @@ const Web = () => {
             </div>
             <div className="block">
                 <div className="block__paragraph font--dx">
-                    오직 나와 내 집은 여호와를 섬기겠노라<br></br> 여호수아 24장 15절
+                    오직 나와 내 집은 여호와를 섬기겠노라<br></br> <span className='joshua'>여호수아 24장 15절</span>
                 </div>
                 <div className="block__paragraph">
                     <p className="korean">한성희 · 정미옥의 장남 <b className="fontSize">한규희</b></p> 
