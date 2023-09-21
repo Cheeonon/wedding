@@ -87,7 +87,7 @@ const Web = () => {
                 <form className="form" onSubmit={handleSubmit}>
                     <div className="form__title">
                         <h1 className="form__title--large">RSVP</h1>
-                        <span className='form__title--small'><b className='form__title--small'>Please response by Oct 20th</b></span>
+                        <span className='form__title--small'><b className='form__title--small'>Please response by Oct 27th</b></span>
                     </div>
 
                     <div className="form__body">
