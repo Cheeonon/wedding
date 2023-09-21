@@ -66,17 +66,17 @@ const Web = () => {
             <img src={divider} alt="divider" className="divider"></img>
             <div className="block">
                 <div className="block__paragraph">
-                    <p className='line font--mon korean line__title'>CEREMONY 세레모니 | 11 : 00 AM</p>
+                    <p className='line font--mon korean line__title font--mon-bold'>CEREMONY 세레모니 | 11 : 00 AM</p>
                     <p className='line font--mon line__map'>ST. GEORGE ON YONGE ANGLICAN CHURCH</p>
                     <p className='line font--mon line__map'>5350 Yonge St. North York, Canada</p>
-                    <a href="google.com" className="map">Map</a>
+                    <a href="google.com" className="map font--mon">GOOGLE MAP</a>
                 </div>
                 <div className="block__paragraph">
-                    <p className="line korean font--mon line__title">RECEPTION 리셉션 | 12 : 30 PM</p>
+                    <p className="line korean font--mon line__title font--mon-bold">RECEPTION 리셉션 | 12 : 30 PM</p>
                     <p className='line font--mon line__map'>AUBERGE DU POMMIER</p>
                     <p className='line font--mon line__map'>4150 Yonge St, North York</p>
-                    <a href="google.com" className="map">Map</a>
-                    <p className="korean">"각 건물 내 지하 주차장을 이용하실 수 있습니다."</p>
+                    <a href="google.com" className="map font--mon">GOOGLE MAP</a>
+                    <p className="korean line__parking">"각 건물 내 지하 주차장을 이용하실 수 있습니다."</p>
                 </div>
             </div>
             <div className="block block__carousel">
@@ -92,12 +92,27 @@ const Web = () => {
                     <div className="form__body">
                         <div className="form__block">
                             <label className="form__label--title" htmlFor='name'>NAME
-                                <input className="form__input" type="text" id="name" name="name" placeholder="John Doe" required onChange={handleName}/>
+                                <input className="form__input" type="text" id="name" name="name" required onChange={handleName}/>
                             </label>
                         </div>
                         <div className="form__block">
-                            <label className="form__label--title" htmlFor='guest'> 동행자 성함 
-                                <input className="form__input form__input--number" type="number" id="guest" name="guest" placeholder="0" required onChange={handleGuest}/>
+                            <label className="form__label--title" htmlFor='name'>
+                                <input className="form__input form__radio" type="radio" id="name" name="name" required onChange={handleName}/>
+                                GLADLY ACCEPTS
+                            </label>
+                            <label className="form__label--title" htmlFor='name'>
+                                <input className="form__input form__radio" type="radio" id="name" name="name" required onChange={handleName}/>
+                                REGRETFULLY DECLINES
+                            </label>
+                        </div>
+                        <div className="form__block">
+                            <label className="form__label--title" htmlFor='guest'> NUMBER OF GUESTS
+                                <input className="form__input form__input--number" type="number" id="guest" name="guest" required onChange={handleGuest}/>
+                            </label>
+                        </div>
+                        <div className="form__block">
+                            <label className="form__label--title" htmlFor='guest'> GUEST NAME
+                                <input className="form__input form__input--number" type="text" id="guest" name="guest" required onChange={handleGuest}/>
                             </label>
                         </div>
                     </div>

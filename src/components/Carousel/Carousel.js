@@ -7,7 +7,7 @@ import "./Carousel.scss";
 
 const Carousel = () => {
 
-    const images = [gallery2, gallery3, gallery5, gallery6]; // Update with your imported images
+    const images = [gallery2, gallery3, gallery5, gallery6, gallery6, gallery6]; // Update with your imported images
 
     
       const [currentIndex, setCurrentIndex] = useState(0);
