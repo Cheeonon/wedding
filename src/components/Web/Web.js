@@ -77,7 +77,8 @@ const Web = () => {
                     <p className='line font--mon line__map'>AUBERGE DU POMMIER</p>
                     <p className='line font--mon line__map'>4150 Yonge St, North York</p>
                     <a href="https://www.google.com/maps/place/Auberge+du+Pommier/@43.746904,-79.407782,17z/data=!4m15!1m8!3m7!1s0x882b3299e52a6d9f:0x1e0b65fd1c4ba8a9!2s4150+Yonge+St,+Toronto,+ON+M2P+2C6!3b1!8m2!3d43.746904!4d-79.407782!16s%2Fg%2F11c2grrf3n!3m5!1s0x882b3299fa9b7ea7:0x3645c0488d8067cf!8m2!3d43.7469808!4d-79.4077049!16s%2Fm%2F0526pt9?entry=ttu" className="map font--mon" target="_blank" rel="noreferrer">GOOGLE MAP</a>
-                    <p className="korean line__parking">"각 건물 내 지하 주차장을 이용하실 수 있습니다."</p>
+                    <p className="korean line__parking">각 건물 내 지하 주차장을 이용하실 수 있습니다.</p>
+                    <p className="line__parking line__parking--small">Underground parking is available for both location.</p>
                 </div>
             </div>
             <div className="block block__carousel">
@@ -97,23 +98,8 @@ const Web = () => {
                             </label>
                         </div>
                         <div className="form__block">
-                            <label className="form__label--title" htmlFor='name'>
-                                <input className="form__input form__radio" type="radio" id="name" name="name" required onChange={handleName}/>
-                                GLADLY ACCEPTS
-                            </label>
-                            <label className="form__label--title" htmlFor='name'>
-                                <input className="form__input form__radio" type="radio" id="name" name="name" required onChange={handleName}/>
-                                REGRETFULLY DECLINES
-                            </label>
-                        </div>
-                        <div className="form__block">
-                            <label className="form__label--title" htmlFor='guest'> NUMBER OF GUESTS
-                                <input className="form__input form__input--number" type="number" id="guest" name="guest" required onChange={handleGuest}/>
-                            </label>
-                        </div>
-                        <div className="form__block">
-                            <label className="form__label--title" htmlFor='guest'> GUEST NAME
-                                <input className="form__input form__input--number" type="text" id="guest" name="guest" required onChange={handleGuest}/>
+                            <label className="form__label--title" htmlFor='guestNum'> NUMBER OF GUESTS
+                                <input className="form__input form__input--number" type="number" id="guestNum" name="guestNum" required onChange={handleGuest}/>
                             </label>
                         </div>
                     </div>

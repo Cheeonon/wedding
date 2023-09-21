@@ -103,7 +103,7 @@
             font-size: .7rem;
             font-family: Montserrat;
             color: #886c35;
-
+            width: 100%;
         }
     }
 
@@ -116,9 +116,12 @@
         color: rgb(61, 61, 61);
         margin-left: .5rem;
         text-align: center;
+        font-family: Montserrat;
+        font-size: .9rem;
 
         &--number{
-            width: 30%;
+            width: 20%;
+            border-bottom: 1px solid #886c35;
         }
     }
 
@@ -129,7 +132,7 @@
         border-radius: 3px;
         font-size: .7rem;
         border: none;
-        font-family: Montserret;
+        font-family: Montserrat;
         text-transform: uppercase;
         margin-top: 1rem;
 
@@ -202,7 +205,12 @@
     }
 
     &__parking{
-        margin-top: 1.2rem;
+        margin-top: 1.6rem;
+
+        &--small{
+            font-size: 1rem;
+            margin-top: .1rem;
+        }
     }
 }
 
