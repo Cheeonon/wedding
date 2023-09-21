@@ -5,32 +5,7 @@
     text-align: center;
     position: relative;
   }
-  
-  .carousel-button {
-    cursor: pointer;
-    position: absolute;
-    outline: none;
-    background: transparent;
-    border: none;
-    width: 40px;
-    top: 35%;
-    transition: all 0.5s ease;
-
-    &:hover{
-        transform: scale(1.1);
-    }
-
-    &--left{
-        left: 1rem;
-        width: 100%;
-    }
-
-    &--right{
-        right: 1rem;
-        width: 100%;
-    }
-  }
-  
+ 
   .carousel-image {
     max-width: 95%;
     max-height: 400px; /* Adjust the height as needed */
@@ -54,12 +29,4 @@
   
   .thumbnail.active {
     transform: rotate(10deg);
-  }
-
-  .left{
-    left: 1.5rem;
-  }
-
-  .right{
-    right: 1.5rem;
   }

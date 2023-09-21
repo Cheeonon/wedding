@@ -157,7 +157,7 @@
 
 .font--dx{
     font-family: DX;
-    font-size: .8rem;
+    font-size: .75rem;
     margin: 2rem;
     margin-top: 3rem;
 }
@@ -174,5 +174,24 @@
 
 
 .line{
-    margin: .5rem;
+    margin: .4rem;
+
+    &__map{
+        font-size: .7rem;
+        margin-bottom: .7rem;
+    }
+
+    &__title{
+        margin-top: 2.5rem;
+        margin-bottom: 1rem;
+    }
+}
+
+.map{
+    background-color: #886c35;
+    color:#fdecec;
+    list-style: none;
+    text-decoration: none;
+    padding: 0rem .6rem;
+    font-size: 1rem;
 }

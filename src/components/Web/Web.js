@@ -51,7 +51,7 @@ const Web = () => {
             </div>
             <div className="block">
                 <div className="block__paragraph font--dx">
-                    오직 나와 내 집은 여호와를 섬기겠노라 여호수아 24장 15절
+                    오직 나와 내 집은 여호와를 섬기겠노라<br></br> 여호수아 24장 15절
                 </div>
                 <div className="block__paragraph">
                     <p className="korean">한성희 · 정미옥의 장남 <b className="fontSize">한규희</b></p> 
@@ -66,14 +66,16 @@ const Web = () => {
             <img src={divider} alt="divider" className="divider"></img>
             <div className="block">
                 <div className="block__paragraph">
-                    <p className='line font--mon korean'>CEREMONY 세레모니 | 11 : 00 AM</p>
-                    <p className='line font--mon font--mon-bold'>ST. GEORGE ON YONGE ANGLICAN CHURCH</p>
-                    <p className='line font--mon'>5350 Yonge St. North York, Canada</p>
+                    <p className='line font--mon korean line__title'>CEREMONY 세레모니 | 11 : 00 AM</p>
+                    <p className='line font--mon line__map'>ST. GEORGE ON YONGE ANGLICAN CHURCH</p>
+                    <p className='line font--mon line__map'>5350 Yonge St. North York, Canada</p>
+                    <a href="google.com" className="map">Map</a>
                 </div>
                 <div className="block__paragraph">
-                    <p className="line korean font--mon">RECEPTION 리셉션 | 12 : 30 PM</p>
-                    <p className='line font--mon font--mon-bold'>AUBERGE DU POMMIER</p>
-                    <p className='line font--mon'>4150 Yonge St, North York</p>
+                    <p className="line korean font--mon line__title">RECEPTION 리셉션 | 12 : 30 PM</p>
+                    <p className='line font--mon line__map'>AUBERGE DU POMMIER</p>
+                    <p className='line font--mon line__map'>4150 Yonge St, North York</p>
+                    <a href="google.com" className="map">Map</a>
                     <p className="korean">"각 건물 내 지하 주차장을 이용하실 수 있습니다."</p>
                 </div>
             </div>
