@@ -15,10 +15,11 @@
     display: flex;
     justify-content: space-between;
     margin: 10px;
-}
+  }
   
   .thumbnail {
     width: 13%; /* Adjust the width of each thumbnail as needed */
+    margin: 0 13px;
     cursor: pointer;
     border: 1px solid #ddd;
     -webkit-transition: all 0.3s ease-in-out;
