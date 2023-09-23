@@ -98,8 +98,9 @@ const Web = () => {
                             </label>
                         </div>
                         <div className="form__block">
-                            <label className="form__label--title" htmlFor='guestNum'> NUMBER OF GUESTS
+                            <label className="form__label--title" htmlFor='guestNum'> NUMBER OF GUESTS 
                                 <input className="form__input form__input--number" type="number" id="guestNum" name="guestNum" required onChange={handleGuest}/>
+                                <br></br><span className='small'>(Including yourself)</span>
                             </label>
                         </div>
                     </div>
